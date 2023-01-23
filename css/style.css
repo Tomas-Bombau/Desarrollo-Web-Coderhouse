@@ -1,0 +1,1535 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Oxygen:wght@300;400;700&display=swap");
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Oxygen', sans-serif;
+'Dancing Script', cursive;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.nav-bar {
+  background-color: #829460;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between; }
+  .nav-bar .nav-bar-logo-patitas-salvajes {
+    padding: 0px 0px 0px 40px; }
+    .nav-bar .nav-bar-logo-patitas-salvajes img {
+      width: 50px;
+      height: 50px; }
+  .nav-bar .menu-navegacion {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 8px 0px 0px 0px; }
+    .nav-bar .menu-navegacion li a {
+      display: inline-block;
+      color: black;
+      font-family: "'Oxygen', sans-serif";
+      font-size: 18px;
+      text-decoration: none;
+      padding: 10px 20px; }
+    .nav-bar .menu-navegacion .dropdown {
+      position: relative;
+      display: inline-block; }
+      .nav-bar .menu-navegacion .dropdown:hover {
+        background-color: #FFE1E1; }
+      .nav-bar .menu-navegacion .dropdown .dropdown-content {
+        background-color: #829460;
+        width: 170px;
+        display: none;
+        position: absolute;
+        z-index: 10; }
+        .nav-bar .menu-navegacion .dropdown .dropdown-content a {
+          display: block;
+          color: black;
+          font-family: "'Oxygen', sans-serif";
+          font-size: 17px;
+          text-decoration: none;
+          text-align: left;
+          padding: 12px 16px; }
+          .nav-bar .menu-navegacion .dropdown .dropdown-content a:hover {
+            background-color: #FFE1E1;
+            width: 100%; }
+      .nav-bar .menu-navegacion .dropdown:hover .dropdown-content {
+        display: block; }
+  .nav-bar .redes-sociales {
+    padding: 0px 40px 0px 0px; }
+    .nav-bar .redes-sociales img {
+      height: 50px;
+      width: 50px; }
+
+.portada-patitas-salvajes {
+  background-image: url(../assets/index/group-of-dogs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  height: 1000px; }
+  .portada-patitas-salvajes h1 {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    font-family: "'Bebas Neue', cursive;";
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black; }
+  .portada-patitas-salvajes h2 {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 75%;
+    left: 50%;
+    font-family: "'Bebas Neue', cursive;";
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black; }
+  .portada-patitas-salvajes p {
+    color: #FFE1E1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 62%;
+    left: 50%;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black; }
+  .portada-patitas-salvajes .bienvenida {
+    -webkit-animation: bienvenida 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: bienvenida 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+@-webkit-keyframes bienvenida {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes bienvenida {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+.quienes-somos {
+  background-color: #829460;
+  max-width: 60%;
+  height: 100%;
+  margin: auto; }
+  .quienes-somos .quienes-somos-subtitulo {
+    -webkit-animation: quienes-somos-subtitulo 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: quienes-somos-subtitulo 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes quienes-somos-subtitulo {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes quienes-somos-subtitulo {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+    .quienes-somos .quienes-somos-subtitulo h2 {
+      color: white;
+      font-family: "'Bebas Neue', cursive;";
+      font-weight: bold;
+      font-size: 35px;
+      text-align: center;
+      padding: 20px 0px; }
+  .quienes-somos .quienes-somos-bienvenida {
+    -webkit-animation: quienes-somos-bienvenida 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: quienes-somos-bienvenida 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes quienes-somos-bienvenida {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes quienes-somos-bienvenida {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+    .quienes-somos .quienes-somos-bienvenida h3 {
+      color: white;
+      font-family: "'Oxygen', sans-serif";
+      font-weight: bold;
+      font-size: 25px;
+      text-align: left;
+      padding: 10px 30px; }
+  .quienes-somos .quienes-somos-presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: none;
+    flex-wrap: wrap;
+    -webkit-animation: quienes-somos-presentacion 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: quienes-somos-presentacion 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes quienes-somos-presentacion {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes quienes-somos-presentacion {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+    .quienes-somos .quienes-somos-presentacion p {
+      color: white;
+      font-family: "'Oxygen', sans-serif";
+      font-size: 15px;
+      text-align: justify;
+      padding: 10px 0px;
+      width: 700px; }
+      .quienes-somos .quienes-somos-presentacion p strong {
+        color: #FFE1E1; }
+    .quienes-somos .quienes-somos-presentacion img {
+      border-style: groove;
+      border-color: black;
+      outline: 3px solid #FFE1E1;
+      margin-bottom: 20px; }
+
+.nuestra-mision {
+  background-color: white;
+  max-width: 60%;
+  height: 100%;
+  margin: auto; }
+  .nuestra-mision h2 {
+    color: black;
+    font-family: "'Bebas Neue', cursive;";
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px; }
+  .nuestra-mision .container-misiones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: none;
+    flex-wrap: wrap; }
+    .nuestra-mision .container-misiones .misiones {
+      width: 33%; }
+      .nuestra-mision .container-misiones .misiones img {
+        width: 20px;
+        height: 20px; }
+      .nuestra-mision .container-misiones .misiones h3 {
+        color: black;
+        font-family: "'Oxygen', sans-serif";
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        padding: 10px 0px; }
+      .nuestra-mision .container-misiones .misiones p {
+        color: black;
+        font-family: "'Oxygen', sans-serif";
+        font-weight: 500;
+        font-size: 15px;
+        text-align: center;
+        padding: 0px 10px 20px 10px; }
+
+.nuestro-trabajo {
+  background-color: #829460;
+  max-width: 60%;
+  height: 100%;
+  margin: auto; }
+  .nuestro-trabajo .nuestro-trabajo-titulo {
+    -webkit-animation: nuestro-trabajo-titulo 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: nuestro-trabajo-titulo 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes nuestro-trabajo-titulo {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes nuestro-trabajo-titulo {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+    .nuestro-trabajo .nuestro-trabajo-titulo h2 {
+      color: white;
+      font-family: "'Bebas Neue', cursive;";
+      font-weight: bold;
+      font-size: 35px;
+      text-align: center;
+      padding: 20px 0px; }
+  .nuestro-trabajo .container-etapas-trabajo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: wrap;
+    -webkit-animation: container-etapas-trabajo 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: container-etapas-trabajo 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes container-etapas-trabajo {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes container-etapas-trabajo {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+    .nuestro-trabajo .container-etapas-trabajo .etapas-trabajo {
+      width: 33%;
+      text-align: center; }
+      .nuestro-trabajo .container-etapas-trabajo .etapas-trabajo h3 {
+        color: white;
+        font-family: "'Oxygen', sans-serif";
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        padding: 10px 0px; }
+      .nuestro-trabajo .container-etapas-trabajo .etapas-trabajo img {
+        width: 300px;
+        height: 200px;
+        border-radius: 200px 100px;
+        border-style: ridge;
+        outline: 3px solid #FFE1E1; }
+      .nuestro-trabajo .container-etapas-trabajo .etapas-trabajo p {
+        color: white;
+        font-family: "'Oxygen', sans-serif";
+        font-size: 15px;
+        text-align: justify;
+        padding: 0px 20px 20px; }
+        .nuestro-trabajo .container-etapas-trabajo .etapas-trabajo p strong {
+          color: #FFE1E1; }
+      .nuestro-trabajo .container-etapas-trabajo .etapas-trabajo a {
+        text-decoration: none; }
+        .nuestro-trabajo .container-etapas-trabajo .etapas-trabajo a:hover {
+          color: #FFE1E1;
+          font-weight: 700; }
+
+.el-equipo {
+  background-color: white;
+  max-width: 60%;
+  height: 100%;
+  margin: auto; }
+  .el-equipo h2 {
+    color: black;
+    font-family: "'Bebas Neue', cursive;";
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px; }
+  .el-equipo .container-el-equipo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: none;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding-bottom: 20px; }
+    .el-equipo .container-el-equipo .cards:hover {
+      box-shadow: 0 8px 30px 0 #829460; }
+    .el-equipo .container-el-equipo .cards h3 {
+      color: black;
+      font-family: "'Oxygen', sans-serif";
+      font-weight: bold;
+      font-size: 25px;
+      text-align: center; }
+    .el-equipo .container-el-equipo .cards img {
+      width: 350px;
+      height: 250px;
+      border: 1px solid black; }
+    .el-equipo .container-el-equipo .cards p {
+      color: black;
+      font-family: "'Oxygen', sans-serif";
+      font-size: 15px;
+      text-align: center; }
+    .el-equipo .container-el-equipo .cards .card-text {
+      background-color: #FFE1E1;
+      border: 1px solid black;
+      margin-top: -4px;
+      box-shadow: 0 4px 8px 0 black; }
+
+.adopciones {
+  background-image: url(../assets/adopta/adopciones-portada.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  height: 600px; }
+  .adopciones h1 {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    font-family: "'Bebas Neue', cursive;";
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black; }
+
+.adopciones-presentacion {
+  max-width: 60%;
+  margin: auto; }
+  .adopciones-presentacion h2 {
+    color: black;
+    font-family: "'Bebas Neue', cursive;";
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px 20px 0px; }
+  .adopciones-presentacion p {
+    color: black;
+    font-family: "'Oxygen', sans-serif";
+    font-size: 15px;
+    text-align: center;
+    padding: 0px 0px 20px 0px; }
+  .adopciones-presentacion a {
+    text-decoration: none; }
+    .adopciones-presentacion a:hover {
+      color: #829460;
+      font-weight: bolder; }
+  .adopciones-presentacion .adopciones-presentacion-contacto {
+    background-color: #829460;
+    height: 30px;
+    width: fit-content;
+    margin: auto;
+    border: 2px black;
+    border-style: outset;
+    box-shadow: 0px 4px 5px black;
+    margin-bottom: 30px; }
+    .adopciones-presentacion .adopciones-presentacion-contacto p {
+      color: white;
+      font-family: "'Oxygen', sans-serif";
+      font-size: 15px;
+      text-align: center;
+      padding: 4px 10px; }
+      .adopciones-presentacion .adopciones-presentacion-contacto p em {
+        font-size: 15px; }
+      .adopciones-presentacion .adopciones-presentacion-contacto p a:hover {
+        color: #FFE1E1;
+        font-weight: bolder; }
+
+.container-perros-en-adopcion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px; }
+  .container-perros-en-adopcion .perros-en-adopcion {
+    position: relative; }
+    .container-perros-en-adopcion .perros-en-adopcion img {
+      display: block;
+      width: 375px;
+      height: 250px;
+      border-radius: 20px;
+      border-style: outset;
+      border-color: #829460; }
+    .container-perros-en-adopcion .perros-en-adopcion a {
+      text-decoration: none; }
+    .container-perros-en-adopcion .perros-en-adopcion:hover img {
+      opacity: 0.5;
+      transition: 1s ease; }
+    .container-perros-en-adopcion .perros-en-adopcion:hover .perros-en-adopcion-nombre-edad {
+      opacity: 1;
+      transition: 2s ease; }
+    .container-perros-en-adopcion .perros-en-adopcion .perros-en-adopcion-nombre-edad {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      text-align: center; }
+      .container-perros-en-adopcion .perros-en-adopcion .perros-en-adopcion-nombre-edad .perro {
+        color: black;
+        font-weight: bold;
+        font-size: 40px;
+        font-family: "'Oxygen', sans-serif"; }
+        .container-perros-en-adopcion .perros-en-adopcion .perros-en-adopcion-nombre-edad .perro:hover {
+          color: #EB455F; }
+
+.donaciones {
+  background-image: url(../assets/donaciones/donaciones-portada.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 600px; }
+  .donaciones h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: "'Bebas Neue', cursive;";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    text-shadow: 2px 0px 3px black; }
+
+.container-donaciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  flex-wrap: nowrap;
+  background-color: white;
+  height: 1550px;
+  max-width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  gap: 30px; }
+  .container-donaciones .donaciones-subtitulos {
+    color: black;
+    font-family: "'Bebas Neue', cursive;";
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #829460;
+    box-shadow: 0px 0px 4px 3px #FFE1E1 inset; }
+  .container-donaciones .donaciones-contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: none;
+    flex-wrap: wrap; }
+    .container-donaciones .donaciones-contenido .donaciones-contenido-imagen img {
+      width: 350px;
+      height: 250px;
+      border-style: outset; }
+    .container-donaciones .donaciones-contenido .donaciones-contenido-texto {
+      align-self: center;
+      width: 60%;
+      height: 250;
+      padding: 0px 40px; }
+      .container-donaciones .donaciones-contenido .donaciones-contenido-texto h2 {
+        color: black;
+        font-family: "'Bebas Neue', cursive;";
+        font-weight: bold;
+        font-size: 20px;
+        text-align: left; }
+      .container-donaciones .donaciones-contenido .donaciones-contenido-texto p {
+        color: black;
+        font-family: "'Oxygen', sans-serif";
+        font-size: 15px;
+        text-align: justify;
+        padding: 10px 0px; }
+      .container-donaciones .donaciones-contenido .donaciones-contenido-texto a:hover {
+        color: #FFE1E1; }
+    .container-donaciones .donaciones-contenido .donar p {
+      padding: 10px 0px; }
+      .container-donaciones .donaciones-contenido .donar p a {
+        background-color: #829460;
+        color: black;
+        font-family: "'Oxygen', sans-serif";
+        font-weight: bold;
+        font-size: 17px;
+        border-radius: 10px; }
+
+.el-refugio {
+  background-image: url(../assets/el-refugio/el-refugio-portada.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  height: 600px; }
+  .el-refugio h1 {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    font-family: "'Bebas Neue', cursive;";
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black; }
+
+.container-el-refugio {
+  display: grid;
+  justify-content: center;
+  align-items: none;
+  grid-template-columns: repeat 5, 1fr;
+  grid-template-rows: 80px 1fr 50px 1fr 1fr 1fr;
+  max-width: 60%;
+  margin: auto;
+  grid-template-areas: "refugio-subtitulo refugio-subtitulo refugio-subtitulo refugio-subtitulo refugio-subtitulo"  "refugio-1 refugio-1 refugio-1 refugio-1-imagen refugio-1-imagen" "refugio-2 refugio-2 refugio-2 refugio-2 refugio-2" "refugio-casona refugio-casona refugio-casona refugio-casona refugio-casona" "refugio-jardin refugio-jardin refugio-jardin refugio-jardin refugio-jardin" "refugio-casitas refugio-casitas refugio-casitas refugio-casitas refugio-casitas"; }
+  .container-el-refugio h2 {
+    color: black;
+    font-family: "'Bebas Neue', cursive;";
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 5px; }
+  .container-el-refugio h3 {
+    font-family: "'Oxygen', sans-serif";
+    font-weight: bold;
+    font-size: 25px; }
+  .container-el-refugio p {
+    color: black;
+    font-family: "'Oxygen', sans-serif";
+    font-size: 15px; }
+  .container-el-refugio .refugio-subtitulo {
+    grid-area: refugio-subtitulo;
+    height: 100%;
+    margin: 20px 0px; }
+  .container-el-refugio .refugio-1 {
+    grid-area: refugio-1;
+    height: 100%; }
+    .container-el-refugio .refugio-1 p {
+      padding: 20px 50px 0px 30px; }
+    .container-el-refugio .refugio-1 a {
+      text-decoration: none; }
+      .container-el-refugio .refugio-1 a:hover {
+        color: #829460;
+        font-weight: bold; }
+  .container-el-refugio .refugio-1-horario p {
+    background-color: #829460;
+    color: white;
+    text-align: center;
+    font-family: "'Oxygen', sans-serif";
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    border: black 1px solid;
+    box-shadow: 0px 0px 4px 3px #FFE1E1 inset;
+    margin: 65px 30px 0px;
+    padding: 5px 5px; }
+  .container-el-refugio .refugio-1-imagen {
+    grid-area: refugio-1-imagen;
+    align-self: center; }
+    .container-el-refugio .refugio-1-imagen img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      border-style: ridge;
+      margin-top: 10px; }
+  .container-el-refugio .refugio-2 {
+    grid-area: refugio-2;
+    height: 5%;
+    align-self: center;
+    background-color: #829460;
+    opacity: 0.5; }
+  .container-el-refugio .refugio-casona {
+    grid-area: refugio-casona;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; }
+    .container-el-refugio .refugio-casona img {
+      border-radius: 20px;
+      border-style: ridge;
+      border-color: black; }
+    .container-el-refugio .refugio-casona .refugio-casona-texto {
+      max-width: 700px; }
+      .container-el-refugio .refugio-casona .refugio-casona-texto h3 {
+        color: black; }
+      .container-el-refugio .refugio-casona .refugio-casona-texto p {
+        padding: 10px 0px; }
+  .container-el-refugio .refugio-jardin {
+    grid-area: refugio-jardin;
+    background-color: #829460;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; }
+    .container-el-refugio .refugio-jardin img {
+      border-radius: 20px;
+      border-style: ridge;
+      border-color: black;
+      outline: 2px solid #FFE1E1; }
+    .container-el-refugio .refugio-jardin a {
+      text-decoration: none; }
+      .container-el-refugio .refugio-jardin a:hover {
+        color: #FFE1E1;
+        font-weight: 700; }
+    .container-el-refugio .refugio-jardin .refugio-jardin-texto {
+      max-width: 700px; }
+      .container-el-refugio .refugio-jardin .refugio-jardin-texto h3 {
+        color: white; }
+      .container-el-refugio .refugio-jardin .refugio-jardin-texto p {
+        color: white;
+        padding: 10px 0px; }
+  .container-el-refugio .refugio-casitas {
+    grid-area: refugio-casitas;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; }
+    .container-el-refugio .refugio-casitas img {
+      border-radius: 20px;
+      border-style: ridge;
+      border-color: black; }
+    .container-el-refugio .refugio-casitas .refugio-casitas-texto {
+      max-width: 700px; }
+      .container-el-refugio .refugio-casitas .refugio-casitas-texto h3 {
+        color: black; }
+      .container-el-refugio .refugio-casitas .refugio-casitas-texto p {
+        padding: 10px 0px; }
+
+.visitas-educativas {
+  background-image: url(../assets/actividades-escolares/actividad-escolar-portada.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  height: 600px; }
+  .visitas-educativas h1 {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    font-family: "'Bebas Neue', cursive;";
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black; }
+
+.container-visitas-educativas {
+  display: grid;
+  justify-content: none;
+  align-items: none;
+  grid-template-columns: repeat 6, 1 fr;
+  grid-template-rows: repeat 18, 1 fr;
+  max-width: 60%;
+  height: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo" "educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo" "dias-horarios dias-horarios dias-horarios dias-horarios dias-horarios dias-horarios"     "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7" "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7" "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7" "imagen1 imagen1 imagen3 imagen3 imagen2 imagen2" "imagen1 imagen1 imagen3 imagen3 imagen2 imagen2" "imagen5 imagen6 imagen3 imagen3 imagen2 imagen2" "imagen5 imagen6 texto-imagen texto-imagen imagen2 imagen2" "imagen5 imagen6 texto-imagen texto-imagen imagen2 imagen2" "imagen5 imagen6 imagen4 imagen4 imagen2 imagen2" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "reservas reservas reservas reservas reservas reservas"; }
+  .container-visitas-educativas .visitas-educativas-subtitulo {
+    grid-area: visitas-educativas-subtitulo;
+    justify-self: center;
+    align-self: center; }
+    .container-visitas-educativas .visitas-educativas-subtitulo h2 {
+      color: black;
+      font-family: "'Bebas Neue', cursive;";
+      font-weight: bold;
+      font-size: 35px;
+      margin-top: 20px;
+      padding: 0 20px; }
+  .container-visitas-educativas .educacion-parrafo {
+    grid-area: educacion-parrafo;
+    justify-self: center;
+    align-self: center; }
+    .container-visitas-educativas .educacion-parrafo p {
+      font-family: "'Oxygen', sans-serif";
+      font-size: 15px;
+      text-align: center; }
+    .container-visitas-educativas .educacion-parrafo .educacion-parrrafo-1 {
+      padding-top: 20px; }
+  .container-visitas-educativas .dias-horarios, .container-visitas-educativas .reservas {
+    grid-area: dias-horarios;
+    width: fit-content;
+    justify-self: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .container-visitas-educativas .dias-horarios p, .container-visitas-educativas .reservas p {
+      background-color: #829460;
+      color: white;
+      font-family: "'Oxygen', sans-serif";
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 10px;
+      border: black 1px solid;
+      box-shadow: 0px 0px 4px 3px #FFE1E1 inset;
+      padding: 8px 40px; }
+  .container-visitas-educativas .reservas {
+    grid-area: reservas; }
+    .container-visitas-educativas .reservas a {
+      text-decoration: none; }
+      .container-visitas-educativas .reservas a:hover {
+        color: #FFE1E1; }
+  .container-visitas-educativas .imagen1 {
+    grid-area: imagen1; }
+    .container-visitas-educativas .imagen1 img {
+      padding: 2px;
+      height: 100%;
+      width: 100%;
+      border-top: 2px solid black;
+      border-left: 2px solid black; }
+  .container-visitas-educativas .imagen2 {
+    grid-area: imagen2; }
+    .container-visitas-educativas .imagen2 img {
+      padding: 2px;
+      height: 100%;
+      width: 100%;
+      border-right: 2px solid black; }
+  .container-visitas-educativas .imagen3 {
+    grid-area: imagen3; }
+    .container-visitas-educativas .imagen3 img {
+      padding: 2px;
+      height: 100%;
+      width: 100%;
+      border-top: 2px solid black; }
+  .container-visitas-educativas .imagen4 {
+    grid-area: imagen4; }
+    .container-visitas-educativas .imagen4 img {
+      padding: 2px;
+      height: 100%;
+      width: 100%;
+      border-bottom: 2px solid black; }
+  .container-visitas-educativas .imagen5 {
+    grid-area: imagen5; }
+    .container-visitas-educativas .imagen5 img {
+      padding: 2px;
+      height: 100%;
+      width: 100%;
+      border-left: 2px solid black; }
+  .container-visitas-educativas .imagen6 {
+    grid-area: imagen6; }
+    .container-visitas-educativas .imagen6 img {
+      padding: 2px;
+      height: 100%;
+      width: 100%; }
+  .container-visitas-educativas .imagen7 {
+    grid-area: imagen7; }
+    .container-visitas-educativas .imagen7 img {
+      padding: 2px;
+      height: 100%;
+      width: 100%;
+      border-top: 2px solid black;
+      border-right: 2px solid black; }
+  .container-visitas-educativas .imagen8 {
+    grid-area: imagen8; }
+    .container-visitas-educativas .imagen8 img {
+      height: 100%;
+      width: 100%;
+      padding: 2px;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black; }
+  .container-visitas-educativas .imagen9 {
+    grid-area: imagen9; }
+    .container-visitas-educativas .imagen9 img {
+      height: 100%;
+      width: 100%;
+      padding: 2px;
+      border-left: 2px solid black;
+      border-bottom: 2px solid black; }
+  .container-visitas-educativas .texto-imagen {
+    grid-area: texto-imagen;
+    background-color: #829460;
+    box-shadow: black 2px 2px 25px inset; }
+    .container-visitas-educativas .texto-imagen p {
+      color: #FFE1E1;
+      font-family: "'Oxygen', sans-serif";
+      font-weight: bold;
+      font-size: 35px;
+      text-align: center;
+      padding-top: 20px;
+      text-shadow: 3px 4px 3px black; }
+
+.container-testimonio {
+  margin: 80px 0px 40px; }
+  .container-testimonio h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "'Bebas Neue', cursive;";
+    text-shadow: 2px 0px 3px white;
+    letter-spacing: 3px;
+    padding: 10px 0px;
+    width: 600px;
+    border-style: double;
+    border-bottom: none;
+    background-image: url(../assets/adopta/fondo-testimonio.jpg);
+    background-size: contain;
+    margin: auto; }
+  .container-testimonio .testimonio {
+    margin: auto;
+    width: 600px;
+    height: 400px; }
+    .container-testimonio .testimonio .testimonios {
+      border-style: double; }
+      .container-testimonio .testimonio .testimonios img {
+        opacity: 0.8; }
+      .container-testimonio .testimonio .testimonios h3 {
+        color: white;
+        background-color: #829460;
+        font-family: "'Oxygen', sans-serif";
+        font-weight: bold;
+        font-size: 25px;
+        width: fit-content;
+        text-align: center; }
+      .container-testimonio .testimonio .testimonios p {
+        font-weight: 550;
+        font-size: 14px;
+        font-family: "'Oxygen', sans-serif";
+        background-color: #829460;
+        color: white; }
+
+.footer {
+  background-image: linear-gradient(to right bottom, #9db176, #9caf75, #9bad74, #99ac74, #98aa73, #96a871, #93a56f, #91a36d, #8d9f6a, #899b66, #869863, #829460); }
+  .footer h2 {
+    color: white;
+    font-family: "'Oxygen', sans-serif";
+    font-weight: bolder;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px; }
+  .footer .container-formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: wrap;
+    gap: 40px; }
+    .footer .container-formulario .mapa {
+      width: 600px;
+      height: 335px; }
+    .footer .container-formulario .fila {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: none;
+      flex-wrap: wrap;
+      padding-bottom: 20px; }
+      .footer .container-formulario .fila p {
+        color: white;
+        font-family: "'Oxygen', sans-serif";
+        font-size: 15px;
+        text-align: left;
+        padding-top: 5px;
+        padding-left: 10px; }
+      .footer .container-formulario .fila img {
+        width: 25px;
+        height: 25px; }
+      .footer .container-formulario .fila .place {
+        display: flex; }
+      .footer .container-formulario .fila .mail {
+        display: flex; }
+        .footer .container-formulario .fila .mail img {
+          margin-top: 2px; }
+      .footer .container-formulario .fila .phone {
+        display: flex; }
+    .footer .container-formulario .formulario .datos-personales-relleno {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: none;
+      flex-wrap: wrap; }
+      .footer .container-formulario .formulario .datos-personales-relleno input {
+        background-color: #EEEEEE;
+        height: 20px;
+        font-family: "'Oxygen', sans-serif";
+        font-size: 12px;
+        text-align: left;
+        border: none;
+        padding-right: 120px; }
+    .footer .container-formulario .formulario .motivo-de-contacto-titulo {
+      color: white;
+      font-family: "'Oxygen', sans-serif";
+      font-weight: bold;
+      font-size: 25px;
+      margin-top: 20px; }
+    .footer .container-formulario .formulario .motivo-contacto {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: none;
+      flex-wrap: wrap;
+      color: white;
+      margin-top: 20px;
+      margin-bottom: 25px;
+      gap: 30px; }
+      .footer .container-formulario .formulario .motivo-contacto label {
+        font-family: "'Oxygen', sans-serif";
+        font-size: 14px;
+        text-align: left;
+        border: none; }
+    .footer .container-formulario .formulario .mensaje-contacto {
+      display: flex;
+      flex-direction: row;
+      justify-content: none;
+      align-items: none;
+      flex-wrap: wrap; }
+      .footer .container-formulario .formulario .mensaje-contacto input {
+        background-color: #EEEEEE;
+        height: 100px;
+        width: 1100px;
+        font-size: 14px;
+        text-align: center;
+        border: none; }
+    .footer .container-formulario .formulario .enviar-limpiar-form {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: none;
+      flex-wrap: wrap;
+      gap: 30px; }
+      .footer .container-formulario .formulario .enviar-limpiar-form input {
+        background-color: #EEEEEE;
+        border: none;
+        font-size: 15px;
+        border: 4px solid #FFE1E1;
+        margin-top: 20px;
+        padding: 5px; }
+        .footer .container-formulario .formulario .enviar-limpiar-form input:hover {
+          color: black;
+          background-color: #FFE1E1;
+          transform: scale(1.1); }
+        .footer .container-formulario .formulario .enviar-limpiar-form input:active {
+          color: red; }
+    .footer .container-formulario .datos-final {
+      color: white;
+      font-size: 14px;
+      text-align: right;
+      padding: 20px 0px 20px 0px; }
+
+@media (max-width: 768px) {
+  /* MEDIA QUERIE HEADER */
+  .nav-bar .nav-bar-logo-patitas-salvajes {
+    display: none; }
+  .nav-bar .menu-navegacion li a {
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 5px; }
+  .nav-bar .menu-navegacion .dropdown .dropdown-content a {
+    font-size: 14px;
+    text-decoration: none; }
+  /* MEDIA QUERIE INDEX */
+  .portada-patitas-salvajes {
+    height: 400px; }
+    .portada-patitas-salvajes h1 {
+      top: 70%;
+      font-size: 25px; }
+    .portada-patitas-salvajes h2 {
+      top: 80%;
+      font-size: 20px; }
+    .portada-patitas-salvajes p {
+      top: 55%;
+      font-size: 60px; }
+  .quienes-somos {
+    max-width: 100%; }
+    .quienes-somos .quienes-somos-bienvenida h3 {
+      text-align: center;
+      padding: 10px 0px; }
+    .quienes-somos .quienes-somos-presentacion p {
+      text-align: justify;
+      width: 100%;
+      margin: 10px; }
+  .nuestra-mision {
+    max-width: 100%; }
+    .nuestra-mision .container-misiones {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: none;
+      flex-wrap: wrap; }
+      .nuestra-mision .container-misiones .misiones {
+        width: 100%; }
+  .nuestro-trabajo {
+    max-width: 100%; }
+    .nuestro-trabajo .container-etapas-trabajo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: none;
+      flex-wrap: wrap; }
+      .nuestro-trabajo .container-etapas-trabajo .etapas-trabajo {
+        width: 100%; }
+  /* MEDIA QUERIE DONACIONES */
+  .donaciones {
+    height: 400px; }
+    .donaciones h1 {
+      font-size: 35px; }
+  .container-donaciones {
+    height: 2400px;
+    max-width: 100%;
+    margin: auto; }
+    .container-donaciones .donaciones-contenido {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin-top: 20px; }
+      .container-donaciones .donaciones-contenido .donaciones-contenido-imagen img {
+        width: 320px;
+        height: 220px;
+        border-style: outset; }
+      .container-donaciones .donaciones-contenido .donaciones-contenido-texto {
+        width: 60%;
+        height: 250;
+        margin-top: 10px;
+        padding: 0px 0px; }
+        .container-donaciones .donaciones-contenido .donaciones-contenido-texto h2 {
+          text-align: center; }
+        .container-donaciones .donaciones-contenido .donaciones-contenido-texto .donar p {
+          text-align: center; }
+  /* MEDIA QUERIE ADOPTA */
+  .adopciones {
+    height: 400px; }
+    .adopciones h1 {
+      font-size: 35px; }
+  .adopciones-presentacion {
+    max-width: 80%; }
+    .adopciones-presentacion h2 {
+      font-size: 30px; }
+    .adopciones-presentacion .adopciones-presentacion-contacto {
+      height: 60px; }
+  .container-testimonio h2 {
+    width: 500px; }
+  .container-testimonio .testimonio {
+    width: 500px;
+    height: 350px; }
+    .container-testimonio .testimonio h3 {
+      font-size: 25px; }
+    .container-testimonio .testimonio p {
+      font-size: 14px; }
+  /* MEDIA QUERIE ELREFUGIO */
+  .el-refugio {
+    height: 400px; }
+    .el-refugio h1 {
+      font-size: 35px;
+      position: absolute;
+      top: 60%;
+      left: 50%; }
+  .container-el-refugio {
+    display: grid;
+    justify-content: center;
+    align-items: none;
+    grid-template-columns: repeat 1, 1fr;
+    grid-template-rows: 50px 200px 300px 600px 600px 600px;
+    max-width: 100%;
+    grid-template-areas: "refugio-subtitulo" "refugio-1-imagen" "refugio-1" "refugio-casona" "refugio-jardin" "refugio-casitas"; }
+    .container-el-refugio .refugio-subtitulo {
+      display: none; }
+    .container-el-refugio .refugio-1-imagen {
+      justify-self: center;
+      align-self: center;
+      margin-bottom: 30px; }
+      .container-el-refugio .refugio-1-imagen img {
+        height: 200px;
+        width: 350px; }
+    .container-el-refugio .refugio-1-texto {
+      text-align: center;
+      margin: 0px; }
+    .container-el-refugio .refugio-1-horario p {
+      text-align: center;
+      margin: 30px 30px 0px; }
+    .container-el-refugio .refugio-casona {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: none; }
+      .container-el-refugio .refugio-casona img {
+        height: 200px;
+        width: 350px; }
+      .container-el-refugio .refugio-casona h3 {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        margin: auto; }
+      .container-el-refugio .refugio-casona p {
+        padding: 10px;
+        text-align: center;
+        margin: auto; }
+    .container-el-refugio .refugio-jardin {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: none; }
+      .container-el-refugio .refugio-jardin img {
+        height: 200px;
+        width: 350px; }
+      .container-el-refugio .refugio-jardin h3 {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        margin: auto; }
+      .container-el-refugio .refugio-jardin p {
+        padding: 10px;
+        text-align: center;
+        margin: auto; }
+    .container-el-refugio .refugio-casitas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: none; }
+      .container-el-refugio .refugio-casitas img {
+        height: 200px;
+        width: 350px; }
+      .container-el-refugio .refugio-casitas h3 {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        margin: auto; }
+      .container-el-refugio .refugio-casitas p {
+        padding: 10px;
+        text-align: center;
+        margin: auto; }
+  /* MEDIA QUERIE ELREFUGIO */
+  .visitas-educativas {
+    height: 350px; }
+    .visitas-educativas h1 {
+      font-size: 35px;
+      font-family: "'Bebas Neue', cursive;";
+      position: absolute;
+      top: 50%;
+      left: 50%; }
+  .container-visitas-educativas {
+    height: 2600px;
+    max-width: 100%;
+    display: grid;
+    justify-content: none;
+    align-items: none;
+    grid-template-columns: repeat 1, 1fr;
+    grid-template-rows: 50px 200px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
+    grid-template-areas: "visitas-educativas-subtitulo" "educacion-parrafo " "dias-horarios " "texto-imagen" "imagen1" "imagen2" "imagen3" "imagen4" "imagen7"  "imagen9" "reservas"; }
+    .container-visitas-educativas .visitas-educativas-subtitulo {
+      margin: 0px; }
+      .container-visitas-educativas .visitas-educativas-subtitulo h2 {
+        font-size: 30px; }
+    .container-visitas-educativas .imagen1 img {
+      border-radius: 10% 10%;
+      border-style: none; }
+    .container-visitas-educativas .imagen2 img {
+      border-radius: 10% 10%;
+      border-style: none; }
+    .container-visitas-educativas .imagen3 img {
+      border-radius: 10% 10%;
+      border-style: none; }
+    .container-visitas-educativas .imagen4 img {
+      border-radius: 10% 10%;
+      border-style: none; }
+    .container-visitas-educativas .imagen5 {
+      display: none; }
+    .container-visitas-educativas .imagen6 {
+      display: none; }
+    .container-visitas-educativas .imagen7 img {
+      border-radius: 10% 10%;
+      border-style: none; }
+    .container-visitas-educativas .imagen8 {
+      display: none; }
+    .container-visitas-educativas .imagen9 img {
+      border-radius: 10% 10%;
+      border-style: none; }
+    .container-visitas-educativas .texto-imagen {
+      display: none; }
+  /* MEDIA QUERIE FOOTER */
+  .footer .container-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .footer .container-formulario .mapa {
+      width: 320px;
+      height: 300px; }
+    .footer .container-formulario .fila {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .footer .container-formulario .fila .place {
+        justify-content: center;
+        margin: 0px; }
+      .footer .container-formulario .fila .mail {
+        justify-content: center; }
+      .footer .container-formulario .fila .phone {
+        justify-content: center; }
+    .footer .container-formulario .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      .footer .container-formulario .formulario .datos-personales-relleno {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: none;
+        flex-wrap: wrap;
+        gap: 5px; }
+        .footer .container-formulario .formulario .datos-personales-relleno input {
+          border: 1px solid black;
+          width: 300px; }
+      .footer .container-formulario .formulario .motivo-de-contacto-titulo {
+        text-align: center; }
+      .footer .container-formulario .formulario .motivo-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        gap: 0px; }
+        .footer .container-formulario .formulario .motivo-contacto input {
+          justify-self: center; }
+      .footer .container-formulario .formulario .mensaje-contacto {
+        padding-top: 20px;
+        justify-content: center; }
+        .footer .container-formulario .formulario .mensaje-contacto input {
+          height: 200px;
+          width: 300px; }
+      .footer .container-formulario .formulario .enviar-limpiar-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px; }
+    .footer .container-formulario .datos-final {
+      text-align: center;
+      padding: 20px 0px 20px 0px; } }
+
+@media (max-width: 650px) {
+  .container-visitas-educativas {
+    height: 2700px;
+    display: grid;
+    justify-content: none;
+    align-items: none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 50px 300px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
+    grid-template-areas: "visitas-educativas-subtitulo" "educacion-parrafo " "dias-horarios " "texto-imagen" "imagen1" "imagen2" "imagen3" "imagen4" "imagen7"  "imagen9" "reservas"; }
+  /* MEDIA QUERIE INDEX */
+  .portada-patitas-salvajes {
+    height: 300px; }
+    .portada-patitas-salvajes h1 {
+      top: 70%;
+      font-size: 30px; }
+    .portada-patitas-salvajes h2 {
+      display: none; }
+    .portada-patitas-salvajes p {
+      top: 50%;
+      font-size: 50px; } }
+
+@media (max-width: 520px) {
+  /* MEDIA QUERIE ADOPTA */
+  .adopciones {
+    height: 300; }
+    .adopciones h1 {
+      font-size: 35px; }
+  .adopciones-presentacion {
+    max-width: 90%; }
+    .adopciones-presentacion .adopciones-presentacion-contacto {
+      height: 80px; }
+  .container-testimonio h2 {
+    width: 390px; }
+  .container-testimonio .testimonio {
+    width: 390px;
+    height: 250px; }
+    .container-testimonio .testimonio h3 {
+      font-size: 25px; }
+    .container-testimonio .testimonio p {
+      font-size: 14px; }
+  /* MEDIA QUERIE VISITAS-EDUCATIVAS */
+  .visitas-educativas {
+    height: 300px; }
+    .visitas-educativas h1 {
+      font-size: 35px; }
+  .container-visitas-educativas {
+    height: 2720px;
+    display: grid;
+    justify-content: none;
+    align-items: none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 50px 330px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
+    grid-template-areas: "visitas-educativas-subtitulo" "educacion-parrafo " "dias-horarios " "texto-imagen" "imagen1" "imagen2" "imagen3" "imagen4" "imagen7"  "imagen9" "reservas"; }
+  /* MEDIA QUERIE DONACIONES */
+  .donaciones {
+    height: 300px; }
+    .donaciones h1 {
+      font-size: 35px; }
+  .container-donaciones {
+    height: 2700px;
+    max-width: 100%;
+    margin: auto; }
+    .container-donaciones .donaciones-contenido .donaciones-contenido-imagen img {
+      width: 320px;
+      height: 220px;
+      border-style: outset; }
+    .container-donaciones .donaciones-contenido .donaciones-contenido-texto {
+      width: 90%;
+      height: 250;
+      margin-top: 10px;
+      padding: 0px 0px; }
+      .container-donaciones .donaciones-contenido .donaciones-contenido-texto h2 {
+        text-align: center; }
+      .container-donaciones .donaciones-contenido .donaciones-contenido-texto .donar p {
+        text-align: center; } }
+
+@media (max-width: 500px) {
+  /* MEDIA QUERIE ELREFUGIO */
+  .el-refugio {
+    background-image: url(../assets/el-refugio/el-refugio-portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    height: 350px; }
+  .container-el-refugio {
+    display: grid;
+    justify-content: center;
+    align-items: none;
+    grid-template-columns: repeat 1, 1fr;
+    grid-template-rows: 50px 200px 400px 600px 600px 600px;
+    grid-template-areas: "refugio-subtitulo" "refugio-1-imagen" "refugio-1" "refugio-casona" "refugio-jardin" "refugio-casitas"; }
+  /* MEDIA QUERIE HEADER */
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: none;
+    flex-wrap: wrap; }
+    .nav-bar .redes-sociales {
+      margin-top: 10px; }
+      .nav-bar .redes-sociales img {
+        height: 30px;
+        width: 30px; }
+    .nav-bar .menu-navegacion li a {
+      font-size: 13px;
+      text-decoration: none;
+      padding: 10px 5px; }
+    .nav-bar .menu-navegacion .dropdown .dropdown-content a {
+      font-size: 13px;
+      text-decoration: none; }
+  /* MEDIA QUERIE INDEX */
+  .portada-patitas-salvajes {
+    height: 230px; }
+    .portada-patitas-salvajes h1 {
+      top: 60%;
+      font-size: 40px; }
+    .portada-patitas-salvajes p {
+      display: none; } }
+
+@media (max-width: 390px) {
+  /* MEDIA QUERIE INDEX */
+  .portada-patitas-salvajes {
+    height: 300px; }
+    .portada-patitas-salvajes h1 {
+      top: 60%;
+      left: 50%;
+      font-size: 40px; }
+  /* MEDIA QUERIE ADOPTA */
+  .adopciones-presentacion {
+    max-width: 100%; }
+  .container-perros-en-adopcion .perros-en-adopcion img {
+    width: 300px;
+    height: 200px; }
+  .container-testimonio h2 {
+    width: 300px; }
+  .container-testimonio .testimonio {
+    width: 300px;
+    height: 200px; }
+    .container-testimonio .testimonio .testimonio1, .container-testimonio .testimonio .testimonio2, .container-testimonio .testimonio .testimonio3 {
+      width: 200px;
+      height: 150px; }
+      .container-testimonio .testimonio .testimonio1 h3, .container-testimonio .testimonio .testimonio2 h3, .container-testimonio .testimonio .testimonio3 h3 {
+        font-size: 15px;
+        margin-top: 10px; }
+      .container-testimonio .testimonio .testimonio1 p, .container-testimonio .testimonio .testimonio2 p, .container-testimonio .testimonio .testimonio3 p {
+        font-size: 10px; }
+  /* MEDIA QUERIE ELREFUGIO */
+  .container-el-refugio {
+    display: grid;
+    justify-content: center;
+    align-items: none;
+    grid-template-columns: repeat 1, 1fr;
+    grid-template-rows: 50px 200px 500px 650px 650px 650px;
+    max-width: 100%;
+    grid-template-areas: "refugio-subtitulo" "refugio-1-imagen" "refugio-1" "refugio-casona" "refugio-jardin" "refugio-casitas"; }
+    .container-el-refugio .refugio-1-imagen img {
+      width: 300px;
+      height: 250px; }
+    .container-el-refugio .refugio-casona img {
+      width: 320px;
+      height: 250px; }
+    .container-el-refugio .refugio-jardin img {
+      width: 320px;
+      height: 250px; }
+    .container-el-refugio .refugio-casitas img {
+      width: 320px;
+      height: 250px; }
+  /* MEDIA QUERIE VISITAS EDUCATIVAS */
+  .container-visitas-educativas {
+    height: 2720px;
+    display: grid;
+    justify-content: none;
+    align-items: none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 20px 370px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
+    grid-template-areas: "visitas-educativas-subtitulo" "educacion-parrafo " "dias-horarios " "texto-imagen" "imagen1" "imagen2" "imagen3" "imagen4" "imagen7"  "imagen9" "reservas"; } }
