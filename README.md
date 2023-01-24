@@ -6,4 +6,11 @@
 
 ## Tecnologías implicadas:
 - HTML
-- CSS
+- CSS: estilo, animaciones, etc.
+- SASS
+- BOOTSTRAP
+
+## Prácticas de SEO aplicadas al proyecto:
+- Keywords
+- Description
+- Opengraph
