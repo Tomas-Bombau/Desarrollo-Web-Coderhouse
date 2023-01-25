@@ -1063,7 +1063,7 @@ font-family: 'Oxygen', sans-serif;
     justify-content: center;
     align-items: none;
     grid-template-columns: repeat 1, 1fr;
-    grid-template-rows: 100px 400px 200px 500px 500px 500px;
+    grid-template-rows: 100px 400px 250px 500px 500px 500px;
     max-width: 100%;
     grid-template-areas: "refugio-subtitulo" "refugio-1-imagen" "refugio-1" "refugio-casona" "refugio-jardin" "refugio-casitas"; }
     .container-el-refugio .refugio-1-imagen {
