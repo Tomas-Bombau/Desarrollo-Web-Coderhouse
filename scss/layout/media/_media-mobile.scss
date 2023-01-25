@@ -1,3 +1,188 @@
+@media(max-width: 1600px){
+/* MEDIA QUERIE EL REFUGIO */
+    .container-el-refugio{
+        @include grid (center, none, repeat (1,1fr), 100px 400px 200px 500px 500px 500px);
+        max-width: 100%;
+        grid-template-areas:
+        "refugio-subtitulo"
+        "refugio-1-imagen"
+        "refugio-1"
+        "refugio-casona"
+        "refugio-jardin"
+        "refugio-casitas";
+        .refugio-1-imagen{
+            justify-self: center;
+            align-self: center;
+            margin-bottom: 30px;
+            img{
+                height: 350px;
+                width: 500px;
+            }
+        }
+        .refugio-1-texto{
+            text-align: center;
+            margin: 0px;
+        }
+        .refugio-1-horario{
+            p{
+            text-align: center;
+            margin: 30px 30px 0px;
+            }
+        }
+    }
+
+/* MEDIA QUERIE INDEX */
+    .quienes-somos{
+        max-width: 100%;
+        .quienes-somos-bienvenida{
+            h3{
+                text-align: center;
+                padding: 10px 0px;
+            }
+        }
+        .quienes-somos-presentacion{
+            p{
+                text-align: justify;
+                width: 90%;
+                margin: auto;
+        }
+    }
+    }
+    .nuestra-mision{
+        max-width: 100%;
+        .container-misiones{
+            @include flex (column, space-evenly, none, wrap);
+            .misiones{
+                width: 100%;
+                p{
+                    width: 80%;
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    .nuestro-trabajo{
+        max-width: 100%;
+        .container-etapas-trabajo{
+        @include flex (column, center, none, wrap);
+            .etapas-trabajo{
+                width: 100%;
+                p{
+                    width: 80%;
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1460px){
+/* MEDIA QUERIE DONACIONES */
+    .container-donaciones{
+        height: 2400px;
+        max-width: 100%;
+        margin: auto;
+        .donaciones-contenido{
+            @include flex (column, center, center, nowrap);
+            margin-top: 20px;
+            .donaciones-contenido-imagen{
+                img{
+                    width: 320px;
+                    height: 220px;
+                    border-style: outset;
+                }
+            }
+            .donaciones-contenido-texto{
+                width: 60%;
+                height: 250;
+                margin-top: 10px;
+                padding: 0px 0px;
+                h2{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+                .donar{
+                        p{
+                            text-align: center;
+                        }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1100px){
+    /* MEDIA QUERIE FOOTER */
+    .footer{
+        .container-formulario{
+            @include flex (column, center, center, wrap);
+            .mapa{
+                width: 500px;
+                height: 300px;
+            }
+            .fila{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                .place{
+                    justify-content: center;
+                    margin: 0px;
+                }
+                .mail{
+                    justify-content: center;
+                }
+                .phone{
+                    justify-content: center;
+                }
+            }
+            .formulario{
+                @include flex (column, center, center, wrap);
+                .datos-personales-relleno{
+                    @include flex (column, center, none, wrap);
+                    gap: 5px;
+                    input{
+                        border: 1px solid black;
+                        width: 500px;
+                    }
+                }
+                .motivo-de-contacto-titulo{
+                    text-align: center;
+                }
+                .motivo-contacto{
+                    @include flex (column, space-between, center, wrap);
+                    margin:0;
+                    gap: 0px;
+                    input{
+                        justify-self: center;
+                    }
+                }
+                .mensaje-contacto{
+                    padding-top: 20px;
+                    justify-content: center;
+                    input{
+                        height: 300px;
+                        width: 500px;
+                    }
+                }
+                .enviar-limpiar-form{
+                    @include flex (row, center, center, wrap);
+                    gap: 10px;
+                }
+            }
+            .datos-final{
+                text-align: center;
+                padding: 20px 0px 20px 0px;
+            }
+        }
+    }
+}
+
+
 @media(max-width:768px) {
 /* MEDIA QUERIE HEADER */
     .nav-bar{
@@ -82,7 +267,7 @@
     }
 }
 .container-donaciones{
-    height: 2400px;
+    height: 2500px;
     max-width: 100%;
     margin: auto;
     .donaciones-contenido{

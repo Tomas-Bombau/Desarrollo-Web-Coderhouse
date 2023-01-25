@@ -625,7 +625,7 @@ font-family: 'Oxygen', sans-serif;
   grid-template-rows: 80px 1fr 50px 1fr 1fr 1fr;
   max-width: 60%;
   margin: auto;
-  grid-template-areas: "refugio-subtitulo refugio-subtitulo refugio-subtitulo refugio-subtitulo refugio-subtitulo"  "refugio-1 refugio-1 refugio-1 refugio-1-imagen refugio-1-imagen" "refugio-2 refugio-2 refugio-2 refugio-2 refugio-2" "refugio-casona refugio-casona refugio-casona refugio-casona refugio-casona" "refugio-jardin refugio-jardin refugio-jardin refugio-jardin refugio-jardin" "refugio-casitas refugio-casitas refugio-casitas refugio-casitas refugio-casitas"; }
+  grid-template-areas: "refugio-subtitulo refugio-subtitulo refugio-subtitulo refugio-subtitulo refugio-subtitulo"  "refugio-1 refugio-1 refugio-1 refugio-1-imagen refugio-1-imagen" "refugio-2 refugio-2 refugio-2 refugio-2 refugio-2" "refugio-casona refugio-casona refugio-casona refugio-casona refugio-casona" "refugio-jardin refugio-jardin refugio-jardin refugio-jardin refugio-jardin" "refugio-casitas refugio-casitas refugio-casitas refugio-casitas refugio-casitas"; }
   .container-el-refugio h2 {
     color: black;
     font-family: "'Bebas Neue', cursive;";
@@ -775,7 +775,7 @@ font-family: 'Oxygen', sans-serif;
   height: 1200px;
   margin: auto;
   display: grid;
-  grid-template-areas: "visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo" "educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo" "dias-horarios dias-horarios dias-horarios dias-horarios dias-horarios dias-horarios"     "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7" "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7" "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7" "imagen1 imagen1 imagen3 imagen3 imagen2 imagen2" "imagen1 imagen1 imagen3 imagen3 imagen2 imagen2" "imagen5 imagen6 imagen3 imagen3 imagen2 imagen2" "imagen5 imagen6 texto-imagen texto-imagen imagen2 imagen2" "imagen5 imagen6 texto-imagen texto-imagen imagen2 imagen2" "imagen5 imagen6 imagen4 imagen4 imagen2 imagen2" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "reservas reservas reservas reservas reservas reservas"; }
+  grid-template-areas: "visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo" "educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo" "dias-horarios dias-horarios dias-horarios dias-horarios dias-horarios dias-horarios"     "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7" "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7" "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7" "imagen1 imagen1 imagen3 imagen3 imagen2 imagen2" "imagen1 imagen1 imagen3 imagen3 imagen2 imagen2" "imagen5 imagen6 imagen3 imagen3 imagen2 imagen2" "imagen5 imagen6 texto-imagen texto-imagen imagen2 imagen2" "imagen5 imagen6 texto-imagen texto-imagen imagen2 imagen2" "imagen5 imagen6 imagen4 imagen4 imagen2 imagen2" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8" "reservas reservas reservas reservas reservas reservas"; }
   .container-visitas-educativas .visitas-educativas-subtitulo {
     grid-area: visitas-educativas-subtitulo;
     justify-self: center;
@@ -1056,6 +1056,164 @@ font-family: 'Oxygen', sans-serif;
       text-align: right;
       padding: 20px 0px 20px 0px; }
 
+@media (max-width: 1600px) {
+  /* MEDIA QUERIE EL REFUGIO */
+  .container-el-refugio {
+    display: grid;
+    justify-content: center;
+    align-items: none;
+    grid-template-columns: repeat 1, 1fr;
+    grid-template-rows: 100px 400px 200px 500px 500px 500px;
+    max-width: 100%;
+    grid-template-areas: "refugio-subtitulo" "refugio-1-imagen" "refugio-1" "refugio-casona" "refugio-jardin" "refugio-casitas"; }
+    .container-el-refugio .refugio-1-imagen {
+      justify-self: center;
+      align-self: center;
+      margin-bottom: 30px; }
+      .container-el-refugio .refugio-1-imagen img {
+        height: 350px;
+        width: 500px; }
+    .container-el-refugio .refugio-1-texto {
+      text-align: center;
+      margin: 0px; }
+    .container-el-refugio .refugio-1-horario p {
+      text-align: center;
+      margin: 30px 30px 0px; }
+  /* MEDIA QUERIE INDEX */
+  .quienes-somos {
+    max-width: 100%; }
+    .quienes-somos .quienes-somos-bienvenida h3 {
+      text-align: center;
+      padding: 10px 0px; }
+    .quienes-somos .quienes-somos-presentacion p {
+      text-align: justify;
+      width: 90%;
+      margin: auto; }
+  .nuestra-mision {
+    max-width: 100%; }
+    .nuestra-mision .container-misiones {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: none;
+      flex-wrap: wrap; }
+      .nuestra-mision .container-misiones .misiones {
+        width: 100%; }
+        .nuestra-mision .container-misiones .misiones p {
+          width: 80%;
+          margin: auto;
+          text-align: center; }
+  .nuestro-trabajo {
+    max-width: 100%; }
+    .nuestro-trabajo .container-etapas-trabajo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: none;
+      flex-wrap: wrap; }
+      .nuestro-trabajo .container-etapas-trabajo .etapas-trabajo {
+        width: 100%; }
+        .nuestro-trabajo .container-etapas-trabajo .etapas-trabajo p {
+          width: 80%;
+          margin: auto;
+          text-align: center; } }
+
+@media (max-width: 1460px) {
+  /* MEDIA QUERIE DONACIONES */
+  .container-donaciones {
+    height: 2400px;
+    max-width: 100%;
+    margin: auto; }
+    .container-donaciones .donaciones-contenido {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin-top: 20px; }
+      .container-donaciones .donaciones-contenido .donaciones-contenido-imagen img {
+        width: 320px;
+        height: 220px;
+        border-style: outset; }
+      .container-donaciones .donaciones-contenido .donaciones-contenido-texto {
+        width: 60%;
+        height: 250;
+        margin-top: 10px;
+        padding: 0px 0px; }
+        .container-donaciones .donaciones-contenido .donaciones-contenido-texto h2 {
+          text-align: center; }
+        .container-donaciones .donaciones-contenido .donaciones-contenido-texto p {
+          text-align: center; }
+        .container-donaciones .donaciones-contenido .donaciones-contenido-texto .donar p {
+          text-align: center; } }
+
+@media (max-width: 1100px) {
+  /* MEDIA QUERIE FOOTER */
+  .footer .container-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .footer .container-formulario .mapa {
+      width: 500px;
+      height: 300px; }
+    .footer .container-formulario .fila {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .footer .container-formulario .fila .place {
+        justify-content: center;
+        margin: 0px; }
+      .footer .container-formulario .fila .mail {
+        justify-content: center; }
+      .footer .container-formulario .fila .phone {
+        justify-content: center; }
+    .footer .container-formulario .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      .footer .container-formulario .formulario .datos-personales-relleno {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: none;
+        flex-wrap: wrap;
+        gap: 5px; }
+        .footer .container-formulario .formulario .datos-personales-relleno input {
+          border: 1px solid black;
+          width: 500px; }
+      .footer .container-formulario .formulario .motivo-de-contacto-titulo {
+        text-align: center; }
+      .footer .container-formulario .formulario .motivo-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        gap: 0px; }
+        .footer .container-formulario .formulario .motivo-contacto input {
+          justify-self: center; }
+      .footer .container-formulario .formulario .mensaje-contacto {
+        padding-top: 20px;
+        justify-content: center; }
+        .footer .container-formulario .formulario .mensaje-contacto input {
+          height: 300px;
+          width: 500px; }
+      .footer .container-formulario .formulario .enviar-limpiar-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px; }
+    .footer .container-formulario .datos-final {
+      text-align: center;
+      padding: 20px 0px 20px 0px; } }
+
 @media (max-width: 768px) {
   /* MEDIA QUERIE HEADER */
   .nav-bar .nav-bar-logo-patitas-salvajes {
@@ -1114,7 +1272,7 @@ font-family: 'Oxygen', sans-serif;
     .donaciones h1 {
       font-size: 35px; }
   .container-donaciones {
-    height: 2400px;
+    height: 2500px;
     max-width: 100%;
     margin: auto; }
     .container-donaciones .donaciones-contenido {
@@ -1172,7 +1330,7 @@ font-family: 'Oxygen', sans-serif;
     grid-template-columns: repeat 1, 1fr;
     grid-template-rows: 50px 200px 300px 600px 600px 600px;
     max-width: 100%;
-    grid-template-areas: "refugio-subtitulo" "refugio-1-imagen" "refugio-1" "refugio-casona" "refugio-jardin" "refugio-casitas"; }
+    grid-template-areas: "refugio-subtitulo" "refugio-1-imagen" "refugio-1" "refugio-casona" "refugio-jardin" "refugio-casitas"; }
     .container-el-refugio .refugio-subtitulo {
       display: none; }
     .container-el-refugio .refugio-1-imagen {
@@ -1259,7 +1417,7 @@ font-family: 'Oxygen', sans-serif;
     align-items: none;
     grid-template-columns: repeat 1, 1fr;
     grid-template-rows: 50px 200px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
-    grid-template-areas: "visitas-educativas-subtitulo" "educacion-parrafo " "dias-horarios " "texto-imagen" "imagen1" "imagen2" "imagen3" "imagen4" "imagen7"  "imagen9" "reservas"; }
+    grid-template-areas: "visitas-educativas-subtitulo" "educacion-parrafo " "dias-horarios " "texto-imagen" "imagen1" "imagen2" "imagen3" "imagen4" "imagen7"  "imagen9" "reservas"; }
     .container-visitas-educativas .visitas-educativas-subtitulo {
       margin: 0px; }
       .container-visitas-educativas .visitas-educativas-subtitulo h2 {
@@ -1364,7 +1522,7 @@ font-family: 'Oxygen', sans-serif;
     align-items: none;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 50px 300px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
-    grid-template-areas: "visitas-educativas-subtitulo" "educacion-parrafo " "dias-horarios " "texto-imagen" "imagen1" "imagen2" "imagen3" "imagen4" "imagen7"  "imagen9" "reservas"; }
+    grid-template-areas: "visitas-educativas-subtitulo" "educacion-parrafo " "dias-horarios " "texto-imagen" "imagen1" "imagen2" "imagen3" "imagen4" "imagen7"  "imagen9" "reservas"; }
   /* MEDIA QUERIE INDEX */
   .portada-patitas-salvajes {
     height: 300px; }
@@ -1408,7 +1566,7 @@ font-family: 'Oxygen', sans-serif;
     align-items: none;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 50px 330px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
-    grid-template-areas: "visitas-educativas-subtitulo" "educacion-parrafo " "dias-horarios " "texto-imagen" "imagen1" "imagen2" "imagen3" "imagen4" "imagen7"  "imagen9" "reservas"; }
+    grid-template-areas: "visitas-educativas-subtitulo" "educacion-parrafo " "dias-horarios " "texto-imagen" "imagen1" "imagen2" "imagen3" "imagen4" "imagen7"  "imagen9" "reservas"; }
   /* MEDIA QUERIE DONACIONES */
   .donaciones {
     height: 300px; }
@@ -1447,7 +1605,7 @@ font-family: 'Oxygen', sans-serif;
     align-items: none;
     grid-template-columns: repeat 1, 1fr;
     grid-template-rows: 50px 200px 400px 600px 600px 600px;
-    grid-template-areas: "refugio-subtitulo" "refugio-1-imagen" "refugio-1" "refugio-casona" "refugio-jardin" "refugio-casitas"; }
+    grid-template-areas: "refugio-subtitulo" "refugio-1-imagen" "refugio-1" "refugio-casona" "refugio-jardin" "refugio-casitas"; }
   /* MEDIA QUERIE HEADER */
   .nav-bar {
     display: flex;
@@ -1511,7 +1669,7 @@ font-family: 'Oxygen', sans-serif;
     grid-template-columns: repeat 1, 1fr;
     grid-template-rows: 50px 200px 500px 650px 650px 650px;
     max-width: 100%;
-    grid-template-areas: "refugio-subtitulo" "refugio-1-imagen" "refugio-1" "refugio-casona" "refugio-jardin" "refugio-casitas"; }
+    grid-template-areas: "refugio-subtitulo" "refugio-1-imagen" "refugio-1" "refugio-casona" "refugio-jardin" "refugio-casitas"; }
     .container-el-refugio .refugio-1-imagen img {
       width: 300px;
       height: 250px; }
@@ -1532,4 +1690,4 @@ font-family: 'Oxygen', sans-serif;
     align-items: none;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 20px 370px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
-    grid-template-areas: "visitas-educativas-subtitulo" "educacion-parrafo " "dias-horarios " "texto-imagen" "imagen1" "imagen2" "imagen3" "imagen4" "imagen7"  "imagen9" "reservas"; } }
+    grid-template-areas: "visitas-educativas-subtitulo" "educacion-parrafo " "dias-horarios " "texto-imagen" "imagen1" "imagen2" "imagen3" "imagen4" "imagen7"  "imagen9" "reservas"; } }
