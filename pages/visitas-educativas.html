@@ -59,13 +59,15 @@
 <!-- Comienza el main -->
 <main>
     <section class="visitas-educativas">
-        <h1> Visitas Educativas </h1>
+        <header>
+            <h1> Visitas Educativas </h1>
+        </header>
     </section>
     <section  class="container-visitas-educativas"> 
-        <div class="visitas-educativas-subtitulo">    
+        <header class="visitas-educativas-subtitulo">    
             <h2> Las salidas escolares </h2>
-        </div>
-        <div class="educacion-parrafo">
+        </header>
+        <section class="educacion-parrafo">
             <div class="educacion-parrrafo-1">
                 <p> 
                     La educación es un pilar fundamental a la hora de pensar y contruir esa
@@ -89,16 +91,12 @@
                     <strong> ¡contactános y no te olvides de reservar tu cupo! </strong> 
                 </p>
             </div>
-        </div>
+        </section>
         <div class="dias-horarios"> 
             <p> Días y horario: Miércoles, Jueves y Viernes de 9:00 a 12:00 y de 13:00 a 16:00 </p> 
         </div>
-        <div class="reservas">
-            <p> Reservas: <a class="reservas-hover" href="#pie"> <em> Contactanos </em> </a> 
-                marcando la opción correspondiente o llamanos al 1165939398 </p> 
-        </div>
         <div class="imagen1">
-            <img  src="../assets/actividades-escolares/imagen1.jpg" alt="imagen-actividades-escolares-1">
+            <img src="../assets/actividades-escolares/imagen1.jpg" alt="imagen-actividades-escolares-1">
         </div>
         <div class="imagen2">
             <img  src="../assets/actividades-escolares/imagen2.jpg" alt="imagen-actividades-escolares-1">
@@ -127,21 +125,22 @@
         <div class="texto-imagen">
             <p> Salidas educativas </p>
         </div>
-    </div>
+        <footer class="reservas">
+            <p> Reservas: <a class="reservas-hover" href="#pie"> <em> Contactanos </em> </a> 
+                marcando la opción correspondiente o llamanos al 1165939398 </p> 
+        </footer>
     </section>  
 </main>
 <!-- Termina el main -->
 
 <!-- Comienza el footer -->
 <footer class="footer">
-    <section>    
+    <header>    
         <h2 id="pie"> Contacto </h2>
-    </section>
+    </header>
     <section class="container-formulario">
-        <div>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204.38051844059862!2d-58.357265288442754!3d-34.9543956062277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2d4bbcb8bf1a9%3A0x8655a160592bd399!2sLibertador%20General%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%20%26%20Rua%20Manzo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1671227498935!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204.38051844059862!2d-58.357265288442754!3d-34.9543956062277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2d4bbcb8bf1a9%3A0x8655a160592bd399!2sLibertador%20General%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%20%26%20Rua%20Manzo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1671227498935!5m2!1ses!2sar" width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section>
             <div class="fila">
                 <div class="place">
                     <img src="../assets/footer/icon-place.png" alt="icono-lugar"> 
@@ -200,10 +199,10 @@
                     <input type="reset" value="Limpiar datos">
                 </div>
             </form>        
-            <div class="datos-final">
+            <footer class="datos-final">
                 <p> Patitas Salvajes Asociación Civil. <br> Resolución <abbr title="Inspeccion General de Justicia"> IGJ </abbr> N°1231/68 <br> Copyright Tomás Bombau © </p>    
-            </div>
-        </div>    
+            </footer>
+        </section>    
     </section>              
 </footer>
 <!-- Termina el footer -->

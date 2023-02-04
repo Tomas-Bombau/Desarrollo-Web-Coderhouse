@@ -29,25 +29,25 @@
     margin-top: 20px;
     gap: 30px;
     .donaciones-subtitulos{
-        color: black;
-        font-family: $titulos-subtitulos-font;
-        text-align: center;
-        font-weight: bold; 
-        font-size: 35px;
         margin-top: 20px;
         border: 1px solid black;
         border-radius: 10px;
         background-color: $green-color;
         box-shadow: 0px 0px 4px 3px $pink-color inset;
+        h2{
+            color: white;
+            font-family: $titulos-subtitulos-font;
+            text-align: center;
+            font-weight: bold; 
+            font-size: 35px;
+        }
         }
     .donaciones-contenido{
         @include flex (row, none, none, wrap);
-        .donaciones-contenido-imagen{
-            img{
-                width: 350px;
-                height: 250px;
-                border-style: outset;
-            }
+        img{
+            width: 350px;
+            height: 250px;
+            border-style: outset;
         }
         .donaciones-contenido-texto{
             align-self: center;

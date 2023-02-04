@@ -2,7 +2,7 @@
     background-image: linear-gradient(to right bottom, #9db176, #9caf75, #9bad74, #99ac74, #98aa73, #96a871, #93a56f, #91a36d, #8d9f6a, #899b66, #869863, #829460);
     h2{
         color: white;
-        font-family: $p-font;
+        font-family: $titulos-subtitulos-font;
         font-weight: bolder; 
         font-size: 35px;
         text-align: center;
@@ -14,7 +14,9 @@
         gap: 40px;
         .mapa{
             width: 600px;
-            height: 335px;
+            height: 350px;
+            border: solid 1px black; 
+            border-radius: 10px;
         }
         .fila{
             @include flex (row,space-between,none,wrap) ;
@@ -22,8 +24,9 @@
             p{
                 color: white;
                 font-family: $p-font;
-                font-size: 15px;
+                font-size: 17px;
                 text-align: left;
+                text-decoration: underline $pink-color;
                 padding-top: 5px;
                 padding-left: 10px;
             }
@@ -49,12 +52,13 @@
                 @include flex (row, space-between, none, wrap);
                 input{
                     background-color: $grey-color;
-                    height: 20px;
+                    height: 25px;
                     font-family: $p-font;
-                    font-size: 12px;
+                    font-size: 14px;
                     text-align: left;
-                    border: none;
-                    padding-right: 120px;
+                    border: solid 1px black;
+                    box-shadow: 0px 3px 5px $pink-color;
+                    padding-right: 80px;
                 }
             }
             .motivo-de-contacto-titulo{
@@ -72,7 +76,7 @@
                 gap: 30px;
                 label{
                     font-family: $p-font;
-                    font-size: 14px;
+                    font-size: 17px;
                     text-align: left;
                     border: none;
                 }
@@ -85,7 +89,8 @@
                     width: 1100px;
                     font-size: 14px;
                     text-align: center; 
-                    border: none;
+                    border: solid 1px black;
+                    box-shadow: 0px 5px 5px $pink-color;
                 }
             }
             .enviar-limpiar-form{
@@ -105,7 +110,7 @@
         }
         .datos-final{
             color: white;
-            font-size: 14px;
+            font-size: 15px;
             text-align: right;
             padding: 20px 0px 20px 0px;
         }

@@ -16,7 +16,7 @@
         row-gap: 20px;
         padding-bottom: 20px;
         .cards{
-            &:hover{box-shadow: 0 8px 30px 0 $green-color;}
+            &:hover{transform: translateY(-10px)}
             h3{
                 color: black;
                 font-family: $p-font;  

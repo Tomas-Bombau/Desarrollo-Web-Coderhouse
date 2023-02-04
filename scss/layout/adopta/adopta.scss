@@ -57,7 +57,7 @@
             font-family: $p-font;
             font-size: 15px;
             text-align: center;
-            padding: 4px 10px;
+            padding: 3px 10px;
             em{
                 font-size: 15px;
             }
@@ -115,3 +115,21 @@
         }
     }
 }
+
+.container-testimonio{
+    .testimonio{
+        .testimonios{
+            .testimoniouno{
+                h3{background: rgba(130, 148, 96, 0.7);
+                }
+                p{
+                    background: rgba(130, 148, 96, 0.7);
+                }
+            }
+        }
+    }
+}
+
+
+
+

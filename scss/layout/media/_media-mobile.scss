@@ -80,6 +80,24 @@
 }
 
 @media(max-width:1460px){
+/* MEDIA QUERIE INDEX */
+.portada-patitas-salvajes{
+    height: 780px;
+    h1{
+        top: 64%;
+        font-size: 40px;
+    }
+    h2{
+        top: 70%;
+        font-size: 25px;
+    }
+    header{
+        top: 55%;
+        font-size: 60px;
+    }
+}
+
+
 /* MEDIA QUERIE DONACIONES */
     .container-donaciones{
         height: 2400px;
@@ -117,6 +135,23 @@
 }
 
 @media(max-width:1100px){
+/* MEDIA QUERIE INDEX */
+.portada-patitas-salvajes{
+    height: 580px;
+    h1{
+        top: 67%;
+        font-size: 35px;
+    }
+    h2{
+        top: 75%;
+        font-size: 20px;
+    }
+    header{
+        top: 55%;
+        font-size: 60px;
+    }
+}
+
     /* MEDIA QUERIE FOOTER */
     .footer{
         .container-formulario{
@@ -182,9 +217,8 @@
     }
 }
 
-
-@media(max-width:768px) {
-/* MEDIA QUERIE HEADER */
+@media(max-width:800px) {
+    /* MEDIA QUERIE HEADER */
     .nav-bar{
         .nav-bar-logo-patitas-salvajes{
             display: none;
@@ -205,23 +239,25 @@
             }
         }
     }
-
+}
+@media(max-width:768px) {
 /* MEDIA QUERIE INDEX */
 .portada-patitas-salvajes{
     height: 400px;
     h1{
         top: 70%;
-        font-size: 25px;
+        font-size: 35px;
     }
     h2{
         top: 80%;
         font-size: 20px;
     }
-    p{
+    header{
         top: 55%;
         font-size: 60px;
     }
 }
+
 .quienes-somos{
     max-width: 100%;
     .quienes-somos-bienvenida{
@@ -232,10 +268,14 @@
     }
     .quienes-somos-presentacion{
         p{
-            text-align: justify;
+            text-align: center;
             width: 100%;
-            margin: 10px;
+            margin: auto;
     }
+        img{
+            width: 320px;
+            height: 230px;
+        }
 }
 }
 
@@ -259,12 +299,20 @@
     }
 }
 
+.el-equipo{
+    .container-el-equipo{
+        .cards{
+            img{
+                    width: 320px;
+                    height: 230px;
+                }
+            }
+        }
+}
+
 /* MEDIA QUERIE DONACIONES */
 .donaciones{
     height: 400px;
-    h1{
-        font-size: 35px;
-    }
 }
 .container-donaciones{
     height: 2500px;
@@ -618,7 +666,7 @@
         h2{
             display: none;
         }
-        p{
+        header{
             top: 50%;
             font-size: 50px;
         }
@@ -683,7 +731,7 @@
 .donaciones{
     height: 300px;
     h1{
-        font-size: 35px;
+        font-size: 45px;
     }
 }
 .container-donaciones{
@@ -716,8 +764,35 @@
 }
 }
 
-
 @media(max-width:500px){
+
+/* MEDIA QUERIE HEADER */
+.nav-bar{
+    @include flex (row, none, none, wrap);
+    .redes-sociales{
+    margin-top: 10px;
+        img{
+        height: 30px;
+        width: 30px;
+        }
+    } 
+    .menu-navegacion{ 
+        li{ 
+            a{
+                font-size: 13px;
+                text-decoration: none;
+                padding: 10px 5px;
+            }
+        }
+        .dropdown{
+            .dropdown-content a{
+                font-size: 13px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 /* MEDIA QUERIE ELREFUGIO */
     .el-refugio{
         background-image: url(../assets/el-refugio/el-refugio-portada.jpg);
@@ -738,33 +813,6 @@
         "refugio-casitas";
     }        
 
-/* MEDIA QUERIE HEADER */
-    .nav-bar{
-        @include flex (row, none, none, wrap);
-        .redes-sociales{
-        margin-top: 10px;
-            img{
-            height: 30px;
-            width: 30px;
-            }
-        } 
-        .menu-navegacion{ 
-            li{ 
-                a{
-                    font-size: 13px;
-                    text-decoration: none;
-                    padding: 10px 5px;
-                }
-            }
-            .dropdown{
-                .dropdown-content a{
-                    font-size: 13px;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-
 /* MEDIA QUERIE INDEX */
 .portada-patitas-salvajes{
     height: 230px;
@@ -772,9 +820,29 @@
         top: 60%;
         font-size: 40px;
     }
-    p{
+    header{
         display: none;
     }
+}
+}
+
+@media(max-width:420px){
+/*MEDIA QUERIE HEADER */
+    .redes-sociales{
+        display: none;
+    }
+
+/*MEDIA QUERIE DONACIONES */    
+    .container-donaciones{
+                height: 2800px;
+            }
+
+/* MEDIA QUERIE ADOPTA*/
+.container-testimonio{
+    .testimonio{
+        width: 350px;
+        height: 250px;
+    }            
 }
 }
 
@@ -802,13 +870,10 @@
         }
     }
     .container-testimonio{
-        h2{
-            width: 300px;
-        }
         .testimonio{
             width: 300px;
             height: 200px;
-            .testimonio1{  
+            .testimoniouno{  
                 width: 200px;
                 height: 150px;
                 h3{
@@ -818,12 +883,6 @@
                 p{
                     font-size: 10px;     
                 }
-            }
-            .testimonio2{
-                @extend .testimonio1;
-            }
-            .testimonio3{
-                @extend .testimonio1;
             }
         }
     }
@@ -884,5 +943,23 @@
     }
 }
 
+@media (max-width: 350px){
+/* MEDIA QUERIE DONACIONES */
+    .donaciones{
+        background-size: cover;
+    }
+    .container-donaciones{
+        height: 2900px;
+        .donaciones-contenido{
+            img{
+                width: 310px;
+                height: 250px;
+                margin: auto;
+            }
+        }
+    }
+    .el-refugio{
+        height: 300px;
+    }
 
-
+}
